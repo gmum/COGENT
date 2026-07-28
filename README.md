@@ -158,7 +158,13 @@ alternatively the full pipeline can by run via
 5. Run `analysis/component_analysis.py` to keep components inside lungs.
 6. Run `analysis/overlay_circles.py` to annotate originals.
 
-![1](assets/lungs.gif)
+<p align="center">
+  <img src="assets/lungs.gif" width="500" alt="3D representation of lungs with a tumor"><br>
+  <em>Figure 1. Animated 3D rendering of the reconstructed lungs with a tumor.</em>
+</p>
 
-![2](assets/comparison_nodules.png)
+<p align="center">
+  <img src="assets/comparison_nodules.png" width="700" alt="Comparison of nodules before and after the attack, including physician annotations (a plus sign indicates positive changes regarding prognosis, a minus sign indicates negative changes, and the number indicates severity)."><br>
+  <em>Figure 2. Original vs after attack across CT slices.</em>
+</p>
 
