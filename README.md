@@ -160,5 +160,5 @@ alternatively the full pipeline can by run via
 
 ![1](assets/lungs.gif)
 
-![2](assets/comparasion_nodules.png)
+![2](assets/comparison_nodules.png)
 
