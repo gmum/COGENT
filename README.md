@@ -1,6 +1,6 @@
-# COGENT  
+# COGENT: Counterfactual Gaussian Explanations for Volumetric Medical Images
 
-Counterfactual Gaussian Explanations for Volumetric Medical Images
+Counterfactual PGD attack on MedGS / 3DGS Gaussian parameters using gradients from the Sybil lung-cancer risk classifier.
 
 ## Prerequisites
 
@@ -128,7 +128,7 @@ alternatively the full pipeline can by run via
 
 ```
 .
-├── attack/                       adversarial attack pipeline
+├── attack/                       attack pipeline
 │   ├── main.py                   entry point
 │   ├── cli.py                    command-line arguments
 │   ├── constants.py              Sybil / MedGS constants
