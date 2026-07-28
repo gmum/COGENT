@@ -158,4 +158,4 @@ alternatively the full pipeline can by run via
 5. Run `analysis/component_analysis.py` to keep components inside lungs.
 6. Run `analysis/overlay_circles.py` to annotate originals.
 
-
+![3D representation of lungs with a tumor](assets/lungs.gif)
