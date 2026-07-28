@@ -1,6 +1,7 @@
-# COGENT
+# COGENT 
+## Counterfactual Gaussian Explanations for Volumetric Medical Images
 
-Adversarial PGD attack on MedGS / 3DGS Gaussian parameters using gradients
+Counterfactual PGD attack on MedGS / 3DGS Gaussian parameters using gradients
 from the Sybil lung-cancer risk classifier.
 
 ## Prerequisites
