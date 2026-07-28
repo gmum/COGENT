@@ -158,7 +158,7 @@ alternatively the full pipeline can by run via
 5. Run `analysis/component_analysis.py` to keep components inside lungs.
 6. Run `analysis/overlay_circles.py` to annotate originals.
 
-![](assets/lungs.gif)
+![1](assets/lungs.gif)
 
-![](assets/comparasion_nodules.png)
+![2](assets/comparasion_nodules.png)
 
