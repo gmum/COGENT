@@ -1,0 +1,33 @@
+name: sybil_interpretability
+channels:
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.25
+  - pandas
+  - matplotlib
+  - scikit-image
+  - pillow
+  - opencv  
+  - pip
+  - pip:
+      - requests
+      - hydra-core
+      - omegaconf
+      - lightning
+      - plyfile
+      - imageio
+      - tqdm
+      # MedGS dependencies (requirements.txt)        
+      - wandb                
+      - trimesh           
+      - nibabel         
+      - open3d            
+      # Sybil runtime dependencies
+      - pydicom
+      - torchio
+      - pylibjpeg
+      - pylibjpeg-libjpeg
+      - pylibjpeg-openjpeg
