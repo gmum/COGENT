@@ -1,0 +1,6 @@
+_target_: classifier.SybilEnsemble
+path_ckpt: data/weights/sybil/checkpoints
+calibrator_path: data/weights/sybil/checkpoints/sybil_ensemble_simple_calibrator.json
+x_min_hu: -1024
+x_max_hu: 3000
+num_years: 7 # 6 years + base risk

@@ -1,0 +1,10 @@
+_target_: torch.utils.data.DataLoader
+dataset: 
+  _target_: dataset.NLSTDatasetForSybil
+  name: nlst
+  split: ${exp.split_name}
+  path_data: /mnt/evafs/groups/mi2lab/data/ct_pretraining/NLST
+batch_size: ${exp.batch_size}
+prefetch_factor: null
+pin_memory: false
+num_workers: 0
