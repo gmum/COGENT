@@ -2,6 +2,15 @@
 
 Counterfactual PGD attack on MedGS / 3DGS Gaussian parameters using gradients from the Sybil lung-cancer risk classifier.
 
+## Clone
+
+MedGS is included as a git submodule, so clone recursively:
+
+```bash
+git clone --recurse-submodules https://github.com/gmum/COGENT.git
+cd COGENT
+```
+
 ## Prerequisites
 
 - Linux + NVIDIA GPU
