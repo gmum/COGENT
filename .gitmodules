@@ -1,6 +1,3 @@
-[submodule "submodules/external/MedGS"]
-	path = submodules/external/MedGS
-	url = https://github.com/gmum/MedGS.git
 [submodule "submodules/MedGS"]
 	path = submodules/MedGS
 	url = https://github.com/gmum/MedGS.git
