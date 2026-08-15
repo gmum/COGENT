@@ -8,7 +8,6 @@ MedGS is included as a git submodule, so clone recursively:
 
 ```bash
 git clone --recurse-submodules https://github.com/gmum/COGENT.git
-cd COGENT
 ```
 
 ## Prerequisites
