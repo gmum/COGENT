@@ -1,0 +1,1 @@
+Namespace(camera='mirror', data_device='cuda', depths='', distance=1.0, eval=False, gs_type='gs', images='images', model_path='output', num_pts=100000, poly_degree=7, resolution=-1, sh_degree=0, source_path='/net/people/plgrid/plgdrzasa/Sybil-Interpretability/submodules/MedGS/data/prostate', train_test_exp=False, white_background=False)
