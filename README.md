@@ -31,19 +31,50 @@ This script:
 - installs PyTorch + CUDA packages,
 - builds MedGS CUDA extensions (`diff-gaussian-rasterization`, `fused-ssim`, `simple-knn`).
 
-### Sybil checkpoints
+## Sybil checkpoints
 
+Sybil weights are **not** bundled with this repository. They are public (MIT license)
+and published as a GitHub release asset:
 
-The Sybil config expects checkpoints under:
-
-```text
-data/weights/sybil/checkpoints
+```bash
+mkdir -p data/weights/sybil/checkpoints
+curl -L -o /tmp/sybil_checkpoints.zip \
+  https://github.com/reginabarzilaygroup/Sybil/releases/download/v1.5.0/sybil_checkpoints.zip
+unzip /tmp/sybil_checkpoints.zip -d /tmp/sybil_ckpt
 ```
 
-Required files include:
+The archive ships the five ensemble members named by md5 hash (`*.ckpt`) plus the
+calibrators. Map them to the names this repo expects:
 
-- `sybil_0.pt` ... `sybil_4.pt`
-- `sybil_ensemble_simple_calibrator.json`
+| file in release                          | file here     |
+|------------------------------------------|---------------|
+| `28a7cd44f5bcd3e6cc760b65c7e0d54d.ckpt`  | `sybil_0.pt`  |
+| `56ce1a7d241dc342982f5466c4a9d7ef.ckpt`  | `sybil_1.pt`  |
+| `624407ef8e3a2a009f9fa51f9846fe9a.ckpt`  | `sybil_2.pt`  |
+| `64a91b25f84141d32852e75a3aec7305.ckpt`  | `sybil_3.pt`  |
+| `65fd1f04cb4c5847d86a9ed8ba31ac1a.ckpt`  | `sybil_4.pt`  |
+
+`sybil_ensemble_simple_calibrator.json` is already named correctly — copy it as is.
+
+Final layout:
+
+```text
+data/weights/sybil/checkpoints/
+├── sybil_0.pt
+├── sybil_1.pt
+├── sybil_2.pt
+├── sybil_3.pt
+├── sybil_4.pt
+└── sybil_ensemble_simple_calibrator.json
+```
+
+Mirrors: the same files are on the Google Drive folder linked in the
+[Sybil README](https://github.com/reginabarzilaygroup/Sybil), and the `sybil`
+package will fetch them into `~/.sybil` automatically via `Sybil("sybil_ensemble")`.
+
+Weights and code from Mikhael et al., *Sybil: A Validated Deep Learning Model to
+Predict Future Lung Cancer Risk From a Single Low-Dose Chest CT*, JCO 2023.
+
 
 ## Run Experiment
 
